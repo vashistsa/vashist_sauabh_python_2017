@@ -36,6 +36,8 @@ Purpose of this analysis is to access the Enron's email and find useful informat
 - plot showing total mails sent during particular month.
 - saved plot at location: 'C:\Users\DELL PC\midterm\que[1-2]\ana_[1-3]'
 
+<img src="que[1-2]/ana_[1-3]/emailsSent.png" />
+
 #### Conclusion
 - Based on the analysis done on sent items, it tells that the entities related to the company sent most of the emails on Jan2002, Mar2001, Feb2001, Nov2000 etc.
 - This clearly raises the flag that the company was going through alot of suspecious activities during these months as compared to other months.
@@ -71,7 +73,7 @@ The purpose of this analysis is to find the useful information company was tryin
 - csv file at location: 'C:\Users\DELL PC\midterm\que[1-2]\ana_[1-3]'
 - Saved plot at location: 'C:\Users\DELL PC\midterm\que[1-2]\ana_[1-3]'
 
-
+<img src="que[1-2]/ana_[1-3]/emailsDel.png" />
 
 #### Conclusion
 - Based on the analysis done on deleted items, it tells that the entities related to the company deleted most of the emails    on Jan2002 and Nov2001.
