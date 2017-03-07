@@ -122,3 +122,127 @@ The purpose of this analysis is to go through all the folder os CEO Lay-K and fi
 5. Words like energy and company tells that enron was an energy company.
 6. Frequent use of california tells about the shortage of electricity supply caused by market manipulations, illegal[5] shutdowns of pipelines by the Texas(Houston word used frequently) energy consortium Enron.
 7. declared and bankruptcy has been used frequently as well.
+
+
+# Analysis on NYT Data
+
+## Purpose
+The purpose is to collect data from New York Times inventory using 2 APIs:
+- Archive API
+- Article Search API
+After collecting data store it in json format files.
+
+### Archive API
+
+#### Imports
+  - requests
+  - datetime
+  - time
+  - json
+  - os
+  
+ 
+#### Steps
+- Generate API Key.
+- Set the parameters(year, month)
+- Put the paramets value in url
+- request the urls and store the response in content.
+- open the json format file with month and year name in it and dump the content in the file.
+
+### Article Search API
+
+#### Imports
+  - requests
+  - datetime
+  - time
+  - json
+  - os
+  
+ 
+#### Steps
+- Generate API Key.
+- Set the parameters(year, month, begin_date, end_date, q).
+- Loop in the pages from 0-120.
+- Put the paramets value in url.
+- Give a time delay of 5 seconds.
+- request the urls and store the response in content.
+- open the json format file with month and year name in it and dump the content in the file.
+
+
+## Analysis 1
+
+### Purpose
+The purpose of this analysis is to find the word frequency in headlines and find the trending topic during the period. API Used: Archive
+
+### Steps
+  
+#### Data Preparation
+- GLOB
+- OS
+- re
+
+#### Extraction and Transformation
+- Loop in the files in directory and store in fileList
+- Clean functin to clean data
+- loop in headlines to fetch words from and analyze data.
+
+
+#### Conclusion
+-Trending news for 01/2017:
+    -Donald Trump
+    -Obama
+    -Army Briefing
+    -Inaugration
+    -Immigration
+    
+    
+## Analysis 2
+
+### Purpose
+The purpose of this analysis is to find the word frequency in keywords and find the trending topic during the period. API Used: Archive
+
+### Steps
+  
+#### Data Preparation
+- GLOB
+- OS
+- re
+- stopwords
+
+#### Extraction and Transformation
+- Loop in the files in directory and store in fileList
+- Clean functin to clean data
+- loop in headlines to fetch words from and analyze data.
+
+
+#### Conclusion
+Trending Keywords:
+- Obama 
+- Trump
+- Administration
+- Women
+- American
+    -Immigration
+    
+## Analysis 2
+
+### Purpose
+The purpose of this analysis is to find the parts of speech in the json files and their frequency. API Used: Article Search
+
+### Steps
+  
+#### Data Preparation
+- GLOB
+- OS
+- re
+- json
+- nltk
+
+#### Extraction and Transformation
+- use glob to read files
+- Loop in the files in directory and store in fileList
+- Clean functin to clean data
+- counter used to count pos_Tags
+
+#### Conclusion
+- POS counts
