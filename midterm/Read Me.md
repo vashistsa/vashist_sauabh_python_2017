@@ -103,18 +103,22 @@ The purpose of this analysis is to go through all the folder os CEO Lay-K and fi
 
 #### Extraction and Transformation
 - Set the userPath to Lay-k's directory.
-- Go through each folder for his directory and using email parser, extract the senders.
-- Count the top 20 senders.
-- Count the top 20 receivers.                                 
+- Go through each folder for his directory and using email parser, extract the senders.  
+- Loop in all the folders in mail directory of Lay-k.
+- use email parser to parse through contents of the emails were sent or deleted or inboxed(all possible data).
+- clean the data and store in data list, word by word and store them in text file.
 
 #### Output
-- count the frequency of dates in list.
-- The output represents the total mails sent during particular month.
-- CSV file at location: 'C:\Users\DELL PC\midterm\que[1-2]\ana_[1-3]'
-- plot showing total mails sent during particular month.
-- saved plot at location: 'C:\Users\DELL PC\midterm\que[1-2]\ana_[1-3]'
+- Count the top 20 senders.
+- Count the top 20 receivers.
+- count the frequency of words in deleted emails.
+- The output represents the frequency of words in those deleted emails mails.
 
 #### Conclusion
-- Based on the analysis done on sent items, it tells that the entities related to the company sent most of the emails on Jan2002, Mar2001, Feb2001, Nov2000 etc.
-- This clearly raises the flag that the company was going through alot of suspecious activities during these months as compared to other months.
-- It is important to go through the emails of respective first because this is the duration when the company was going through chaos.
+1. It is important to analyze Enron's CEO's profile as a part of this project.
+2. The top sender's list provides the list of people who were in direct frequent contact during the scam.
+3. The top receiver's list provides the list of people with whom the CEO was in direct frequent contact during the scam.
+4. The pupose of last activity was to find the top used words used by the CEO during this period.
+5. Words like energy and company tells that enron was an energy company.
+6. Frequent use of california tells about the shortage of electricity supply caused by market manipulations, illegal[5] shutdowns of pipelines by the Texas(Houston word used frequently) energy consortium Enron.
+7. declared and bankruptcy has been used frequently as well.
