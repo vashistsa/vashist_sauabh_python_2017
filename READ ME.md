@@ -22,46 +22,48 @@ I have analyzed the what was the ratio of articles on war to the other articles.
 The Aim of Analysis 1 is to find the impact of war like situations on the stock market of Arm Manufacturers proving US govt arms. Basis of this analysis is the information gathered from knowledge that General Dynamics was the primary provider of TOMAHAWK Missiles to US and UK Govt. Total of 109 Tomahawk missiles were used during Afghan War 2002 with total cost of $150 Million. Other Arms providers used in the Analysis are Raytheon, Lockheed Martins and Boeing.
 
 
-### Step 1 
+### Steps Taken
+
+#### Data Preparation
 Packages Used -:
 - Yahoo_Finance
 - OS
+- time
 - CSV
 - Pandas
 - Numpy
 - Plotly
+- ystockquote
 
-1. Historical data of stocks from the 4 companies was gathered between 2001-12-16 to 2002-04-11
-2. The stock data was stored in CSV at location : 'final/extra/.csv'
-3. Dataframes were created for each dataset.
-4. Used Plotly library to plot the line chart.
+#### Data Extraction
+- Import Yahoo_Finance python package.
+- Store the stock data in CSV.
+- Dataframes were created for each dataset.
+
+#### Data Transformation
+- Normalized the data to plot "Bell-Curve".
+
+#### Output
+- Plots at 'final\Analysis\ana_[1-3]'
+- CSV File at 'final\extra'
 
 ## Plot 1
 
 
-### Result of Topic Modelling
-- Result is stored in [midterm/que[1-2]/ana_[1-3]/Topic Modelling/Sent Emails/result/topicModelling.png]
-- See Attached image.
-<img src ="que[1-2]/ana_[1-3]/Topic Modelling/result/topicModelling.PNG" />
-```
-Each line is a topic with individual topic terms. 
-- Topic 1 - It Can be termed as Business.
-- Topic 2 - It Can be termed as Legalities.
-- Topic 3 - It Can be termed as Meeting.
-- Topic 4 - It Can be termed as Meeting in casual tone.
-```
+## Inference
+The plot encapsulates the steep rise in the value of the mentioned organizations due to the utilization of weapons in the Afghanistan war inflating the demand vs supply ratio.
 
-### Conclusion from Above Analysis
-- Topic 1 contains words that are directly related to the core business of Enron like "gas", "power" etc.
-- Topic 2 while related to business seems to be more about the process rather than the content of the core business. 
-  It has a lot of terms relevant to business legalities.
-- Topic 3 contains a lot of meeting related words, perhaps they are from emails that were sent as meeting notices.
-- Topic 4 also seems to be meeting-related but in a more casual tone and setting.
+## Plot 2
+
+
+## Inference
+- As the first plot describes the rise in value of stocks, high volumes of shares are traded on the New York Stock Exchange. 
+- The normal distribution of the mentioned companies shows a right skewed shift. 
+- It indicates a trend of buying a stock at a cheaper price to sell later at a projected surge price due to the ongoing war. 
 
 #### Final Conclusion based on Analysis.
-- Core business of Enron was related to Gas, Power. Some business legalities were going on due to which lot of meeting were conducted.
-- These Legalities can be related to any thing.
-
+- A proof of concept is established over the problem statement. 
+- After studying the plots over the timeline, a conclusion can be drawn marking a direct relation between the utlization of weapons in war zones and the simultaneous upswing in the stock value of the top four defense contractors of the United States of America.
 
 ## Analysis 2 
 #### Data access - Enron Mail Dir.
