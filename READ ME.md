@@ -19,14 +19,17 @@ I have analyzed the what was the ratio of articles on war to the other articles.
   - from yahoo_finance import Share
 
 ## Analysis 1 
-The Aim of Analysis 1 is to find the impact of war like situations on the stock market of Arm Manufacturers proving US govt arms and those that do not.
+The Aim of Analysis 1 is to find the impact of war like situations on the stock market of Arm Manufacturers proving US govt arms. Basis of this analysis is the information gathered from knowledge that General Dynamics was the primary provider of TOMAHAWK Missiles to US and UK Govt. Total of 109 Tomahawk missiles were used during Afghan War 2002 with total cost of $150 Million. Other Arms providers used in the Analysis are Raytheon, Lockheed Martins and Boeing.
 
 
-### Step 1 (Data Preperation)
+### Step 1 (Data Collection and Preparation)
 Packages Used -:
-- GLOB
+- Yahoo_Finance
 - OS
-- Email Parser
+- CSV
+- re
+- Pandas
+- Numpy
 
 I have read "Sent Items" folder of all Employees from the data provided by professor.
 ```
