@@ -22,46 +22,22 @@ I have analyzed the what was the ratio of articles on war to the other articles.
 The Aim of Analysis 1 is to find the impact of war like situations on the stock market of Arm Manufacturers proving US govt arms. Basis of this analysis is the information gathered from knowledge that General Dynamics was the primary provider of TOMAHAWK Missiles to US and UK Govt. Total of 109 Tomahawk missiles were used during Afghan War 2002 with total cost of $150 Million. Other Arms providers used in the Analysis are Raytheon, Lockheed Martins and Boeing.
 
 
-### Step 1 (Data Collection and Preparation)
+### Step 1 
 Packages Used -:
 - Yahoo_Finance
 - OS
 - CSV
-- re
 - Pandas
 - Numpy
+- Plotly
 
-I have read "Sent Items" folder of all Employees from the data provided by professor.
-```
-1- Initially the data was in MIME type format.
-2- Lopped through each email and sent to Email Parser (get_payload()) in order to get the "Text Body".
-3- Stored text body of all sent emails as txt file in seperate directory. [midterm/data/Topic Modelling/Sent Emails/*.txt].
-4- Read all sent emails txt files and stored in one LIST.
-```
-### Step 2 (Cleaning & Preprocessing)
-Packges Used -:
-- RE
-- NLTK Stop Words
-- NLTK Wordnet
+1. Historical data of stocks from the 4 companies was gathered between 2001-12-16 to 2002-04-11
+2. The stock data was stored in CSV at location : 'final/extra/.csv'
+3. Dataframes were created for each dataset.
+4. Used Plotly library to plot the line chart.
 
-In this step I have remove the punctuations, stopwords and normalize the List.
-```
-1- Looped through the List to remove all stopword using (nltk stopwords('english))
-2- Removed all Punctuation from the List.
-3- Normalized the Data List using (NLTK wordnet lemma.lemmatize(word)).
-```
-### Step 3 (Preparing Document-Term Matrix)
-Packages Used-:
-- Gensim
+## Plot 1
 
-All the text documents combined is known as the corpus. To run any mathematical model on text corpus, it is a good practice to convert it into a matrix representation. LDA model looks for repeating term patterns in the entire DT matrix. 
-
-```
-1- Creating the term dictionary of data, where every unique term is assigned an index. 
-2- Converting list of documents (corpus) into Document Term Matrix using dictionary prepared.
-3- Created an object for LDA model and train it on Document-Term matrix using gensim library(Lda = gensim.models.ldamodel.LdaModel).
-4- Running and Trainign LDA model on the document term matrix using gensim.
-```
 
 ### Result of Topic Modelling
 - Result is stored in [midterm/que[1-2]/ana_[1-3]/Topic Modelling/Sent Emails/result/topicModelling.png]
@@ -87,7 +63,7 @@ Each line is a topic with individual topic terms.
 - These Legalities can be related to any thing.
 
 
-## Analysis 2 (Analysis on TOP [To & FROM] emails in Enron Data Set)
+## Analysis 2 
 #### Data access - Enron Mail Dir.
 #### Result Folder - [midterm/que[1-2]/ana_[1-3]/Top Employee/]
 #### File Name (Midterm_Question 1 (Analysis 2 - Top Email Analysis).ipynb) stored in midterm/que[1-2]/ana_[1-3].ipynb/]
