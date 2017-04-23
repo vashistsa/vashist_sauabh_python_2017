@@ -1,5 +1,5 @@
 # Final Project 
-<img src ="final/Analysis/ana_[1-3]/AfghanWar.PNG" />
+<img src ="final/Analysis/ana_[1-3]/AfghanWar.jpg" />
 ## Synopsis: 
 As a part of Final Project, I have analyzed the impact of war like situations around the world. I am comparing the stocks of 
 US Military arm manufacturer "General Dynamics" to those of who were not the part of Afghan War 2002. As this event took place in 2002 when
