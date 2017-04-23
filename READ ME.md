@@ -32,7 +32,6 @@ Packages Used -:
 - CSV
 - Pandas
 - Numpy
-- Plotly
 - ystockquote
 
 #### Data Extraction
@@ -41,120 +40,103 @@ Packages Used -:
 - Dataframes were created for each dataset.
 
 #### Data Transformation
-- Normalized the data to plot "Bell-Curve".
+- Normalized the data to plot "Bell-Curve" using numpy Random function.
+
+#### Plotting
+- Offline Plotting done.
+- Plotly library used.
+- Scatter Plot 
+- Displot (Normal Distribution)
 
 #### Output
-- Plots at 'final\Analysis\ana_[1-3]'
-- CSV File at 'final\extra'
+- StockData at 'final\Analysis\ana_[1-3]\StockData.png'
+- VolumeTraded at 'final\Analysis\ana_[1-3]\VolumeTraded.png'
+- SharesBA File at 'final\extra\SharesBA.csv'
+- SharesGD File at 'final\extra\SharesGD.csv'
+- SharesLMT File at 'final\extra\SharesLMT.csv'
+- SharesRTN File at 'final\extra\SharesRTN.csv'
 
-## Plot 1
+#### Plot 1
 
 
-## Inference
+#### Inference
 The plot encapsulates the steep rise in the value of the mentioned organizations due to the utilization of weapons in the Afghanistan war inflating the demand vs supply ratio.
 
-## Plot 2
+#### Plot 2
 
 
-## Inference
+#### Inference
 - As the first plot describes the rise in value of stocks, high volumes of shares are traded on the New York Stock Exchange. 
 - The normal distribution of the mentioned companies shows a right skewed shift. 
 - It indicates a trend of buying a stock at a cheaper price to sell later at a projected surge price due to the ongoing war. 
 
-#### Final Conclusion based on Analysis.
+### Final Conclusion based on Analysis.
 - A proof of concept is established over the problem statement. 
 - After studying the plots over the timeline, a conclusion can be drawn marking a direct relation between the utlization of weapons in war zones and the simultaneous upswing in the stock value of the top four defense contractors of the United States of America.
 
 ## Analysis 2 
-#### Data access - Enron Mail Dir.
-#### Result Folder - [midterm/que[1-2]/ana_[1-3]/Top Employee/]
-#### File Name (Midterm_Question 1 (Analysis 2 - Top Email Analysis).ipynb) stored in midterm/que[1-2]/ana_[1-3].ipynb/]
-> In this Analysis-:
-- I wil find TOP employee who recieved & sent most emails from directory of Half of Millions emails.
-- Then will predict result on those TOP employees.
-- Then will Analyse their emails on year basis.
+The Aim of Analysis 1 is to find the impact of war like situations on the stock market of Arm Manufacturers proving US govt arms. Basis of this analysis is the information gathered from knowledge that General Dynamics was the primary provider of TOMAHAWK Missiles to US and UK Govt. Total of 109 Tomahawk missiles were used during Afghan War 2002 with total cost of $150 Million. Other Arms providers used in the Analysis are Raytheon, Lockheed Martins and Boeing.
 
-### Step 1 (Data Preperation)
+
+### Steps Taken
+
+#### Data Preparation
 Packages Used -:
-- GLOB
+- Yahoo_Finance
 - OS
-- Email Parser
-
-I have read "ALL" folder of all Employees from the data provided by professor.
-```
-1- Initially the data was in MIME type format.
-2- Lopped through each email and sent to Email Parser (get_payload()) in order to get the "To" & "FROM".
-3- Stored TO & FROM of all emails in two different List.
-```
-
-### Step 2 (Cleaning & Preprocessing)
-Packages Used -:
-- RE
-
-In this step I have replaced all the tab's, newlines and spaces.
-```
-1- Looped through the List to remove all stab's, newlines and spaces.
-```
-
-### Step 3 (Finding Top 10 from LIST & thier Count)
-Packages Used -:
-- Counter
-- Collections
-
-In this step I have Found the TOP to & from emp emails.
-```
-1- Looped through the List to find top 10 using Counter Counter(to_email_list).most_common(10).
-```
-See attached Pic.
-<img src ="que[1-2]/ana_[1-3]/Top Employee/result/count.PNG" />
-```
-After Seeing above result.
-- We can Predict -: (To Email)
-    - The top person is Richard Shapiro.
-    - He was the Vice President and lobbyist (“bribery guy”) for Enron.
-    - A lot of his emails are about handing dollars to politicians, and getting favourable laws passed.
-    - The fact that he received the most emails shows he was in touch with everything that was happening.
-    
-- (From Email)
-    - Kay Mann, He is the head of legal for Enron.
-    - The fact that she sent so many emails is ironical, seeing as how Enron was breaking every law in the book 
-      keep in mind that most employees, including Kay Mann, were innocent.
-    - Only the top executives were guilty, and most went to prison.
-    
-    
-- Funny Fact:
-   - A company with such a active legal department, and yet the executives ignored (or didn’t care) about the law at all. 
-```
-
-### Step 4 (Analysis on above result)
-Packages Used -:
+- time
 - CSV
+- Pandas
+- Json
+- time
+- Numpy
+- Plotly
+- ystockquote
+- NYT Archive API
 
-In this step, I am going to analyse all emails of employee in each category w.r.t year.
-```
-1- Created List of emp name empList = ['shapiro-r', 'mann-k'].
-2- I looped thorugh each employee all folder and saved date in two different list.
-3- Date was in word format but I formatted and collected year with count of emails of each employee.
-4- I stored Year and Count in CSV format that can be find here [midterm/que[1-2]/ana_[1-3]/Top Employee/emp/*.csv]
-```
 
-### Step 5 (Reading CSV file and Plotting on Pie Chart)
-Packages Used -:
-- Matplotlib
+#### Data Extraction
+- Import Yahoo_Finance python package to fetch NYT 2002 as well as current data.
+- Extract NYT acticles using archive API.
+- Dataframes were created for each dataset from stocks.
 
-In this step, I read csv data from csv file and plotted on pie chart.
-```
-1- Used Matplotlib library to conert number in to % to plot % of emails in particulat year.
-2- These files are stored in [midterm/que[1-2]/ana_[1-3]/Top Employee/emp/result/*.png]
-```
- see attached pic
-<img src ="que[1-2]/ana_[1-3]/Top Employee/result/shapiro-r.png" /> 
-<img src ="que[1-2]/ana_[1-3]/Top Employee/result/mann-k.png" />
- 
-### Conclusion from Above Analysis & Pictures
-- As we know, The company went bankrupt in year 2001. So, it was obvious that the whole email transaction was occur in same year.
-- Richard Shapiro, The company Vice President. We can see 94 % of email traffic in year 2001.
-- Kay Mann, Legal Head. We can see 50% of email traffic, which shows he was not actual the part of Enron. But he was actively involved.
+#### Data Transformation
+- From Stocks dataframe, years were removed in order to plot the stocks(2002 and current) on same graph.
+- Mean of the stocks were plotted.
+- Count of Articles in each section was calculated for json files extracted.
+- Result stored in CSV.
+
+#### Plotting
+- Offline Plotting done.
+- Plotly library used.
+- Bar Graph 
+- Pie Chart percentage distribution
+
+#### Output
+- NYTstocks at 'final\Analysis\ana_[1-3]\NYTstocks.png'
+- SectionArticleCount at 'final\Analysis\ana_[1-3]\SectionArticleCount.png'
+- SharesNYTWarTime File at 'final\extra\SharesNYTWarTime.csv'
+- SharesNYTNow File at 'final\extra\SharesNYTNow.csv'
+- TT1 File at 'final\extra\TT1.csv'
+
+
+#### Plot 1
+
+
+#### Inference
+The plot encapsulates the steep rise in the value of the mentioned organizations due to the utilization of weapons in the Afghanistan war inflating the demand vs supply ratio.
+
+#### Plot 2
+
+
+#### Inference
+- As the first plot describes the rise in value of stocks, high volumes of shares are traded on the New York Stock Exchange. 
+- The normal distribution of the mentioned companies shows a right skewed shift. 
+- It indicates a trend of buying a stock at a cheaper price to sell later at a projected surge price due to the ongoing war. 
+
+### Final Conclusion based on Analysis.
+- A proof of concept is established over the problem statement. 
+- After studying the plots over the timeline, a conclusion can be drawn marking a direct relation between the utlization of weapons in war zones and the simultaneous upswing in the stock value of the top four defense contractors of the United States of America.
 
 ## Analysis 3 (This Analysis is based on Above Analysis.)
 #### Data access - Enron Mail Dir.
