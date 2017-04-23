@@ -1,5 +1,5 @@
 # Final Project 
-<img src ="final/Analysis/ana_[1-3]/AfghanWar.jpg" />
+<img src ="Analysis/ana_[1-3]/AfghanWar.jpg" />
 ## Synopsis: 
 As a part of Final Project, I have analyzed the impact of war like situations around the world. I am comparing the stocks of 
 US Military arm manufacturer "General Dynamics" to those of who were not the part of Afghan War 2002. As this event took place in 2002 when
@@ -57,13 +57,13 @@ Packages Used -:
 - SharesRTN File at 'final\extra\SharesRTN.csv'
 
 #### Plot 1
-<img src ="final/Analysis/ana_[1-3]/StockData.PNG" />
+<img src ="Analysis/ana_[1-3]/StockData.PNG" />
 
 #### Inference
 The plot encapsulates the steep rise in the value of the mentioned organizations due to the utilization of weapons in the Afghanistan war inflating the demand vs supply ratio.
 
 #### Plot 2
-<img src ="final/Analysis/ana_[1-3]/VolumeTraded.PNG" />
+<img src ="Analysis/ana_[1-3]/VolumeTraded.PNG" />
 
 #### Inference
 - As the first plot describes the rise in value of stocks, high volumes of shares are traded on the New York Stock Exchange. 
@@ -123,7 +123,7 @@ Packages Used -:
 
 
 #### Plot 1
-<img src ="final/Analysis/ana_[1-3]/NYTstocks.PNG" />
+<img src ="Analysis/ana_[1-3]/NYTstocks.PNG" />
 
 #### Inference
 - Since the event was broadcasted live over the globe, and is potentially marked as a new divide in the political environment, minute details were significantly covered by the media to relay as much information to the aghast citizen. 
@@ -131,7 +131,7 @@ Packages Used -:
 
 
 #### Plot 2
-<img src ="final/Analysis/ana_[1-3]/SectionArticleCount.PNG" />
+<img src ="Analysis/ana_[1-3]/SectionArticleCount.PNG" />
 
 #### Inference
 - Majority of articles focused on the stories revolving around 9/11 and the rising politcal tensions while all other information eschewed. 
@@ -178,13 +178,13 @@ Packages Used -:
 
 
 #### Plot 1
-<img src ="final/Analysis/ana_[1-3]/WordTotalArticle.PNG" />
+<img src ="Analysis/ana_[1-3]/WordTotalArticle.PNG" />
 
 #### Inference
 The plot encapsulates the steep rise in the value of the mentioned organizations due to the utilization of weapons in the Afghanistan war inflating the demand vs supply ratio.
 
 #### Plot 2
-<img src ="final/Analysis/ana_[1-3]/NYT.PNG" />
+<img src ="Analysis/ana_[1-3]/NYT.PNG" />
 
 #### Inference
 - As the first plot describes the rise in value of stocks, high volumes of shares are traded on the New York Stock Exchange. 
