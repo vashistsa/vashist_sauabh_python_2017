@@ -161,14 +161,9 @@ Packages Used -:
 
 
 #### Data Extraction
-- Import Yahoo_Finance python package to fetch NYT 2002 as well as current data.
-- Extract NYT acticles using archive API.
-- Dataframes were created for each dataset from stocks.
+- Count of the words like 'killing', 'Afghan', 'War', 'Gulf', 'Terrorism', 'Terror', 'death','Al Qaeda' was extracted from the Json File.
+- Based on previous analysis, top 5 sections from the articles were used.
 
-#### Data Transformation
-- Mean of the stocks were plotted.
-- Count of Articles in each section was calculated for json files extracted.
-- Result stored in CSV.
 
 #### Plotting
 - Offline Plotting done.
